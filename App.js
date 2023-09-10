@@ -1,13 +1,12 @@
-import { StyleSheet, View } from "react-native";
+import { StatusBar } from "expo-status-bar";
+import { StyleSheet, Text, View } from "react-native";
 
 const App = () => {
   return (
-    <View style={{ flex: 1 }}>
-      <View style={{ width: 50, height: 50, backgroundColor: "blue" }}></View>
-      <View style={{ flex: 1, backgroundColor: "red" }}></View>
-      <View
-        style={{ width: 100, height: 200, backgroundColor: "green" }}
-      ></View>
+    <View style={styles.container}>
+      <Text>Hello World!</Text>
+      <Text>How are you?</Text>
+      <Text>I'm feeling blue!</Text>
     </View>
   );
 };
@@ -15,18 +14,9 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-  },
-  box1: {
-    flex: 1,
-    backgroundColor: "blue",
-  },
-  box2: {
-    flex: 12,
-    backgroundColor: "red",
-  },
-  box3: {
-    flex: 5,
-    backgroundColor: "green",
+    backgroundColor: "#fff",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
 
