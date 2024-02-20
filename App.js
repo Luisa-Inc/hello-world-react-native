@@ -18,6 +18,14 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  blue: {
+    color: "blue",
+    fontWeight: "600",
+  },
+  bigRed: {
+    color: "red",
+    fontSize: 30,
+  },
 });
 
 export default App;
